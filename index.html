@@ -35,43 +35,208 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content fade-in">
+                <div class="hero-badge">Transforming Global Healthcare</div>
                 <h1 class="hero-title">Universal Health Coverage for All</h1>
-                <p class="hero-subtitle">Building stronger health systems through innovative digital solutions and collaborative partnerships</p>
+                <p class="hero-subtitle">Building stronger health systems through innovative digital solutions and collaborative partnerships that ensure equitable access to quality healthcare worldwide</p>
                 <div class="hero-buttons">
-                    <a href="#features" class="btn btn-primary">Learn More</a>
-                    <a href="#get-involved" class="btn btn-secondary">Get Involved</a>
+                    <a href="#features" class="btn btn-primary">Explore Features</a>
+                    <a href="#get-involved" class="btn btn-secondary">Join Our Mission</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">10+</div>
+                        <div class="hero-stat-label">Countries</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">1M+</div>
+                        <div class="hero-stat-label">Lives Impacted</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">50+</div>
+                        <div class="hero-stat-label">Partners</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg class="hero-svg" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00a86b;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="300" cy="200" r="150" fill="url(#grad1)" opacity="0.2" class="pulse-animation"/>
+                    <path d="M200 200 L250 150 L300 200 L350 150 L400 200" stroke="white" stroke-width="3" fill="none" class="draw-animation"/>
+                    <circle cx="200" cy="200" r="8" fill="white" class="pulse-animation" style="animation-delay: 0.5s"/>
+                    <circle cx="300" cy="200" r="8" fill="white" class="pulse-animation" style="animation-delay: 1s"/>
+                    <circle cx="400" cy="200" r="8" fill="white" class="pulse-animation" style="animation-delay: 1.5s"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Solutions</span>
+                <h2 class="section-title">Powerful Features for Global Health</h2>
+                <p class="section-description">Comprehensive digital tools designed to strengthen health systems and improve healthcare delivery worldwide</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Digital Health Systems</h3>
+                    <p class="feature-description">Comprehensive platforms for managing patient data, tracking health outcomes, and coordinating care across communities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Community Engagement</h3>
+                    <p class="feature-description">Tools to connect healthcare providers, community health workers, and patients for better coordination and outcomes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Data Analytics</h3>
+                    <p class="feature-description">Advanced analytics and reporting capabilities to track health trends, measure impact, and inform decision-making.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-time Monitoring</h3>
+                    <p class="feature-description">Monitor health indicators, track disease outbreaks, and respond quickly to emerging health challenges.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Global Reach</h3>
+                    <p class="feature-description">Scalable solutions that work across different countries, languages, and healthcare systems.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Open Source</h3>
+                    <p class="feature-description">Built on open-source principles, ensuring transparency, security, and community-driven innovation.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Latest News Section -->
-    <section class="news-section">
+    <section class="news-section" id="learn">
         <div class="container">
-            <h2 class="section-title">Latest News</h2>
+            <div class="section-header">
+                <span class="section-badge">Stay Informed</span>
+                <h2 class="section-title">Latest News & Updates</h2>
+                <p class="section-description">Stay up to date with our latest initiatives, partnerships, and impact stories</p>
+            </div>
             <div class="news-grid">
                 <article class="news-card">
-                    <div class="news-category">Updates</div>
-                    <h3 class="news-title">REACH UHC Platform Launch</h3>
-                    <p class="news-date">January 15, 2025</p>
-                    <p class="news-excerpt">We're excited to announce the launch of our new platform designed to support universal health coverage initiatives worldwide.</p>
-                    <a href="#" class="news-link">Read more →</a>
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="url(#newsGrad1)"/>
+                                <defs>
+                                    <linearGradient id="newsGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0052a3;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="200" cy="125" r="40" fill="white" opacity="0.3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-category">Updates</div>
+                        <h3 class="news-title">REACH UHC Platform Launch</h3>
+                        <p class="news-date">January 15, 2025</p>
+                        <p class="news-excerpt">We're excited to announce the launch of our new platform designed to support universal health coverage initiatives worldwide.</p>
+                        <a href="#" class="news-link">Read more →</a>
+                    </div>
                 </article>
                 <article class="news-card">
-                    <div class="news-category">Partnerships</div>
-                    <h3 class="news-title">New Partnership Announcement</h3>
-                    <p class="news-date">January 10, 2025</p>
-                    <p class="news-excerpt">REACH UHC partners with leading health organizations to expand access to quality healthcare services.</p>
-                    <a href="#" class="news-link">Read more →</a>
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="url(#newsGrad2)"/>
+                                <defs>
+                                    <linearGradient id="newsGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00a86b;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#008a5a;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M150 100 L200 150 L250 100" stroke="white" stroke-width="4" fill="none" opacity="0.3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-category">Partnerships</div>
+                        <h3 class="news-title">New Partnership Announcement</h3>
+                        <p class="news-date">January 10, 2025</p>
+                        <p class="news-excerpt">REACH UHC partners with leading health organizations to expand access to quality healthcare services.</p>
+                        <a href="#" class="news-link">Read more →</a>
+                    </div>
                 </article>
                 <article class="news-card">
-                    <div class="news-category">Impact</div>
-                    <h3 class="news-title">Transforming Healthcare Delivery</h3>
-                    <p class="news-date">January 5, 2025</p>
-                    <p class="news-excerpt">See how our digital solutions are making a difference in communities across the globe.</p>
-                    <a href="#" class="news-link">Read more →</a>
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="url(#newsGrad3)"/>
+                                <defs>
+                                    <linearGradient id="newsGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="150" y="100" width="100" height="50" fill="white" opacity="0.3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-category">Impact</div>
+                        <h3 class="news-title">Transforming Healthcare Delivery</h3>
+                        <p class="news-date">January 5, 2025</p>
+                        <p class="news-excerpt">See how our digital solutions are making a difference in communities across the globe.</p>
+                        <a href="#" class="news-link">Read more →</a>
+                    </div>
                 </article>
             </div>
         </div>
@@ -94,22 +259,55 @@
     </section>
 
     <!-- Impact Stats -->
-    <section class="impact-stats">
+    <section class="impact-stats" id="impact">
         <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Impact</span>
+                <h2 class="section-title">Making a Difference Worldwide</h2>
+            </div>
             <div class="stats-grid">
                 <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <div class="stat-number">10+</div>
                     <div class="stat-label">Countries</div>
                 </div>
                 <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <div class="stat-number">5</div>
                     <div class="stat-label">Continents</div>
                 </div>
                 <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <div class="stat-number">1M+</div>
                     <div class="stat-label">Lives Impacted</div>
                 </div>
                 <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <div class="stat-number">50+</div>
                     <div class="stat-label">Partners</div>
                 </div>
@@ -121,22 +319,60 @@
     <!-- How Can We Help Section -->
     <section class="help-section">
         <div class="container">
-            <h2 class="section-title">How can we help you?</h2>
+            <div class="section-header">
+                <span class="section-badge">Get Started</span>
+                <h2 class="section-title">How can we help you?</h2>
+                <p class="section-description">Find the information and resources you need to get started</p>
+            </div>
             <div class="help-grid">
                 <div class="help-card">
+                    <div class="help-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="help-title">I would like to know more about the features of REACH UHC</h3>
+                    <p class="help-description">Explore our comprehensive digital health solutions and platform capabilities</p>
                     <a href="#features" class="help-link">Learn more →</a>
                 </div>
                 <div class="help-card">
+                    <div class="help-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="help-title">I am interested in which countries have already implemented REACH UHC</h3>
+                    <p class="help-description">Discover our global reach and see where we're making an impact</p>
                     <a href="#impact" class="help-link">Learn more →</a>
                 </div>
                 <div class="help-card">
+                    <div class="help-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="help-title">How can I get in touch with other community members?</h3>
+                    <p class="help-description">Join our growing community of healthcare professionals and innovators</p>
                     <a href="#get-involved" class="help-link">Learn more →</a>
                 </div>
                 <div class="help-card">
+                    <div class="help-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="help-title">Where can I find the technical documentation?</h3>
+                    <p class="help-description">Access comprehensive guides, API documentation, and technical resources</p>
                     <a href="#learn" class="help-link">Learn more →</a>
                 </div>
             </div>
@@ -144,26 +380,56 @@
     </section>
 
     <!-- Role-Based Section -->
-    <section class="roles-section">
+    <section class="roles-section" id="get-involved">
         <div class="container">
-            <h2 class="section-title">What describes your role the best?</h2>
+            <div class="section-header">
+                <span class="section-badge">Join Us</span>
+                <h2 class="section-title">What describes your role the best?</h2>
+                <p class="section-description">Find resources and opportunities tailored to your role</p>
+            </div>
             <div class="roles-grid">
                 <div class="role-card">
+                    <div class="role-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="role-title">Funding Organization</h3>
                     <p class="role-description">I am interested in the impact of the REACH UHC project in countries.</p>
                     <a href="#impact" class="role-link">Learn more →</a>
                 </div>
                 <div class="role-card">
+                    <div class="role-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="role-title">Developer</h3>
                     <p class="role-description">I would like to get more information about the technical details of REACH UHC.</p>
                     <a href="#learn" class="role-link">Learn more →</a>
                 </div>
                 <div class="role-card">
+                    <div class="role-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="role-title">Implementer</h3>
                     <p class="role-description">I am looking for information about the implementation of REACH UHC.</p>
                     <a href="#features" class="role-link">Learn more →</a>
                 </div>
                 <div class="role-card">
+                    <div class="role-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="role-title">Volunteer</h3>
                     <p class="role-description">I want to support the REACH UHC project by helping out.</p>
                     <a href="#get-involved" class="role-link">Learn more →</a>
